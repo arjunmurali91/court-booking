@@ -5,7 +5,7 @@ The system focuses on **concurrency-safe booking**, **derived availability**, an
 
 ---
 
-## 🚀 Features
+## Features
 
 - Facility and court management
 - Derived court availability (no slot table)
@@ -18,7 +18,7 @@ The system focuses on **concurrency-safe booking**, **derived availability**, an
 
 ---
 
-## 🏗️ High-Level Architecture
+##  High-Level Architecture
 
 - **Controllers**: REST API layer
 - **Services**:
@@ -31,7 +31,7 @@ The system focuses on **concurrency-safe booking**, **derived availability**, an
 
 ---
 
-## 📌 Key Design Decisions
+##  Key Design Decisions
 
 - Availability is derived dynamically from bookings
 - Booking uses a temporary **HOLD → CONFIRMED** lifecycle
@@ -44,7 +44,7 @@ The system focuses on **concurrency-safe booking**, **derived availability**, an
 
 ---
 
-## 🧠 Assumptions
+##  Assumptions
 
 - No facility-level schedules or downtime
 - Courts are the atomic booking unit
@@ -53,7 +53,7 @@ The system focuses on **concurrency-safe booking**, **derived availability**, an
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Java 21
 - Spring Boot
@@ -77,7 +77,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 Run unit tests with:
 
@@ -89,13 +89,13 @@ Coverage is focused on service-layer business logic.
 
 ---
 
-## ⏰ Background Jobs
+##  Background Jobs
 
 Expired holds and no-shows are handled via cron-based SQL scripts to keep APIs synchronous and simple.
 
 ---
 
-## 📎 Notes
+##  Notes
 
 This project is intentionally scoped to demonstrate:
 - Backend design
